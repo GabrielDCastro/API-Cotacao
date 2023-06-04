@@ -1,0 +1,10 @@
+org\br\mineradora\dto\USDBRL.class
+org\br\mineradora\dto\CurrencyPriceDTO.class
+org\br\mineradora\dto\QuotationDTO.class
+org\br\mineradora\dto\USDBRL$USDBRLBuilder.class
+org\br\mineradora\MyEntity.class
+org\br\mineradora\client\CurrencyPriceClient.class
+org\br\mineradora\repository\QuotationRepository.class
+META-INF\panache-archive.marker
+org\br\mineradora\dto\CurrencyPriceDTO$CurrencyPriceDTOBuilder.class
+org\br\mineradora\dto\QuotationDTO$QuotationDTOBuilder.class
