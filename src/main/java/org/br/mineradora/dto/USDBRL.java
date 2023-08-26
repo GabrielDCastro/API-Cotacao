@@ -4,11 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.extern.jackson.Jacksonized;
-@Builder //Quando a gente for criar um objeto USDBRL, a gente não vai precisar instanciar um valor para cada variável e ter um contrutor diferente pra cada conjunto
-//de variáveis passadas
-@AllArgsConstructor // Cria um construtor padrão com todas as variáveis disponíveis
-@Jacksonized //Ele permite que essa classe seja lida como um json
-@Data //Evita da gente precisar criar os getters e setters
+
+@Jacksonized
+@Data
+@Builder
+@AllArgsConstructor
 public class USDBRL {
 
     public String code;

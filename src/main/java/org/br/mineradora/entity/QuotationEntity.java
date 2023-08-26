@@ -1,8 +1,9 @@
 package org.br.mineradora.entity;
 
-import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -11,30 +12,19 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 public class QuotationEntity {
+
     @Id
     @GeneratedValue
     private Long id;
+
     private Date date;
+
+    @Column(name="currency_price")
     private BigDecimal currencyPrice;
+
+    @Column(name="pct_change")
     private String pctChange;
+
     private String pair;
 
-    public Date getDate() {
-        return date;
-    }
-
-    //  quando o nome é grande ou estranho é melhor expecificar o nome na mão
-    @Column(name="currency_price")
-    public BigDecimal getCurrencyPrice() {
-        return currencyPrice;
-    }
-
-    @Column(name = "pct_change")
-    public String getPctChange() {
-        return pctChange;
-    }
-
-    public String getPair() {
-        return pair;
-    }
 }

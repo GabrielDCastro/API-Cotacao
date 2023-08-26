@@ -15,5 +15,7 @@ import java.util.Date;
 public class QuotationDTO {
 
     private Date date;
+
     private BigDecimal currencyPrice;
+
 }
